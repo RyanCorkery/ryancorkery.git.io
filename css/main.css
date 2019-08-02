@@ -22,39 +22,16 @@ nav{
 
 nav img{
 	margin: 5px 0 5px 20px;
-	height: 100px;
-}
-
-nav ul{
-	display: none;
-	position: absolute;
-	top: 100%;
-	align-self: flex-end;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul a{
-	display: block;;
-	padding: 10px 20px;
-	width: 200px;
-	text-decoration: none;
-	color: white;
-	background-color: rgb(153, 153, 153);
-}
-
-nav ul a:hover{
-	background-color: #888888;
+	height: 50px;
 }
 
 .hamburger{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-right: 10px;
+	margin: 15px 10px;
 	height: 24px;
-	width: 31px;
+	width: 36px;
 	border: 1px solid black;
 	border-radius: 5px;
 }
@@ -67,13 +44,23 @@ nav ul a:hover{
     background-color: black;
 }
 
-.hamburgerClose{
+.navRight{
 	display: none;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	width: 200px;
+	height: 100vh;
+	background-color: rgb(102, 102, 102);
+}
+
+.hamburgerClose{
+	align-self: flex-end;
 	position: relative;
-	margin-right: 10px;
+	margin: 15px 10px;
 	height: 24px;
-	width: 31px;
-	border: 1px solid black;
+	width: 36px;
+	border: 1px solid white;
 	border-radius: 5px;
 }
 
@@ -81,11 +68,11 @@ nav ul a:hover{
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: 3px;
+	right: 5px;
     width: 25px;
     height: 2px;
     border-radius: 2px;
-    background-color: black;
+    background-color: white;
 }
 
 .hamburgerClose:before{
@@ -99,6 +86,28 @@ nav ul a:hover{
     -moz-transform:rotate(-45deg);
 	transform: rotate(-45deg);
 }
+
+nav ul{
+	align-self: flex-start;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-top: 1px solid rgb(140, 140, 140);
+}
+
+nav ul a{
+	display: block;;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	/*background-color: rgb(102, 102, 102);*/
+}
+
+nav ul a:hover{
+	background-color: #888888;
+}
+
 
 /********************************/
 
