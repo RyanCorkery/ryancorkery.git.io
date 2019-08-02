@@ -1,4 +1,7 @@
 body{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Titillium Web';
 	font-size: 16px;
 	margin: 0;
@@ -29,7 +32,7 @@ nav img{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 15px 10px;
+	margin: 20px 10px;
 	height: 24px;
 	width: 36px;
 	border: 1px solid black;
@@ -57,7 +60,7 @@ nav img{
 .hamburgerClose{
 	align-self: flex-end;
 	position: relative;
-	margin: 15px 10px;
+	margin: 20px 10px;
 	height: 24px;
 	width: 36px;
 	border: 1px solid white;
@@ -90,15 +93,15 @@ nav img{
 nav ul{
 	align-self: flex-start;
 	list-style-type: none;
-	margin: 0;
+	margin: 0 5%;
 	padding: 0;
-	width: 100%;
+	width: 90%;
 	border-top: 1px solid rgb(140, 140, 140);
 }
 
 nav ul a{
 	display: block;;
-	padding: 10px 20px;
+	padding: 10px;
 	text-decoration: none;
 	color: white;
 }
@@ -107,14 +110,16 @@ nav ul a:hover{
 	background-color: #888888;
 }
 
-
 /********************************/
 
 section{
-	padding: 10px;
+	flex: 1;
+	padding: 30px 40px;
 	background-color: rgba(236, 242, 248, 1);
+	text-align: center;
 }
 section div{
+	margin-bottom: 30px;
 	padding: 5px 15px;
 	background-color: white;
 	border: 1px solid #888888;
@@ -122,8 +127,7 @@ section div{
 }
 
 h1{
-	margin: 0;
-	text-align: center;
+	margin: 0;	
 }
 
 /********************************/
