@@ -25,7 +25,7 @@ nav{
 
 nav img{
 	margin: 5px 0 5px 20px;
-	height: 50px;
+	height: 70px;
 }
 
 .hamburger{
@@ -35,8 +35,8 @@ nav img{
 	margin: 20px 10px;
 	height: 24px;
 	width: 36px;
-	border: 1px solid black;
-	border-radius: 5px;
+	/*border: 1px solid black;*/
+	/*border-radius: 5px;*/
 }
 
 .hamburger div{
@@ -60,11 +60,12 @@ nav img{
 .hamburgerClose{
 	align-self: flex-end;
 	position: relative;
-	margin: 20px 10px;
-	height: 24px;
+	margin: 5px 10px;
+	/*height: 24px;*/
+	height: 70px;
 	width: 36px;
-	border: 1px solid white;
-	border-radius: 5px;
+	/*border: 1px solid white;*/
+	/*border-radius: 5px;*/
 }
 
 .hamburgerClose:before, .hamburgerClose:after{
@@ -114,12 +115,13 @@ nav ul a:hover{
 
 section{
 	flex: 1;
-	padding: 30px 40px;
+	padding: 0px 40px;
 	background-color: rgba(236, 242, 248, 1);
 	text-align: center;
+	box-shadow: 1px 1px 1px #888888; 
 }
 section div{
-	margin-bottom: 30px;
+	margin: 30px 0;
 	padding: 5px 15px;
 	background-color: white;
 	border: 1px solid #888888;
@@ -133,12 +135,29 @@ h1{
 /********************************/
 
 footer{
-
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
+footer img{
+	height: 50px;
+}
 
+footer a{
+	text-decoration: none;
+	color: black;
+}
 
+.footerLinks{
+	display: flex;
+	flex-direction: column;
+}
 
+footer a{
+	text-decoration: none;
+	color: black;
+}
 
 
 
