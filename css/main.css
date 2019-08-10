@@ -120,6 +120,7 @@ section{
 	text-align: center;
 	box-shadow: 1px 1px 1px #888888; 
 }
+
 section div{
 	margin: 30px 0;
 	padding: 5px 15px;
@@ -128,8 +129,19 @@ section div{
 	border-radius: 5px;
 }
 
+section img{
+	height: 200px;
+	width: 300px;
+	margin: 10px auto;
+}
+
 h1{
-	margin: 0;	
+	margin: 0;
+	font-size: 20px;
+}
+
+p{
+	margin: 5px;
 }
 
 /********************************/
@@ -156,6 +168,7 @@ footer div p{
 }
 
 footer a{
+	font-style: italic;
 	text-decoration: none;
 	color: black;
 }
@@ -163,6 +176,14 @@ footer a{
 
 
 
+
+
+.test{
+	height: 200px;
+	width: 300px;
+	background-color: blue;
+	margin: 10px auto;
+}
 
 
 
