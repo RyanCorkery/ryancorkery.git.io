@@ -158,11 +158,12 @@ section img{
 	margin: 10px 0;
 }
 
-h1{
+h1, h2{
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
 	font-weight: 500;
+	text-align: center;
 }
 
 section p{
@@ -184,14 +185,14 @@ form div{
 
 .contactText p{
 	text-align: left;
-	margin: 0 5% 5px 5%;
+	margin: 10px 5% 5px 5%;
 }
 
 label{
 	margin: 10px 0 0 5%;
 }
 
-input, textarea{
+input[type=text], input[type=email], textarea{
 	align-self: center;
 	margin: 12px 0;
 	padding: 12px;
@@ -201,12 +202,29 @@ input, textarea{
 	resize: none;
 }
 
+select{
+	margin: 10px 5%;
+	width: 200px;
+}
+
+.radio{
+	flex-direction: row;
+	margin: 10px 5%;
+}
+
+input[type=radio]{
+	margin: 0 10px;
+}
+
 input[type=submit]{
+	align-self: center;
+	margin: 10px;
 	width: 150px;
 }
 
 .thankyou_message{
 	display: none;
+	margin: 30px 0;
 }
 
 /********************************/

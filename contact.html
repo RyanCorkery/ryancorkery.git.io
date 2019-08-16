@@ -37,11 +37,9 @@
 			<div class="contactText">
 				<h1>CONTACT ME</h1>
 
-				<p><br>I would love to hear from you!</p>
+				<p>I would love to hear from you!</p>
 				<p>Please use the contact form below to send a message.</p>
-				<p>If unsure about a box, leave it blank.</p>
 			</div>
-			
 		</div>
 		
 		<form class="gform pure-form pure-form-stacked" method="POST" 
@@ -51,18 +49,42 @@
 				<input type="text" name="name" placeholder="Name">
 
 				<label for="email">Email Address</label>
-				<input type="text" name="email" placeholder="your.name@email.com">
+				<input type="email" name="email" placeholder="your.name@email.com">
 
-				<label for="message">Message</label>
-				<textarea rows="10" placeholder="Tell me about your needs..."></textarea>
+				<label for="phone">Phone Number</label>
+				<input type="text" name="phone" placeholder="555-123-4567">
 
-			<!-- business name
-				business - what does it do
-				number of pages
-				online sales y/n
-				if yes - how many products
-				custom email
-				 -->
+				<label for="business">Business Name</label>
+				<input type="text" name="business" placeholder="Business Name">
+
+				<label for="field">Business Field</label>
+				<input type="text" name="field" placeholder="What does your business do?">
+
+				<label for="pages">Approximately how many pages does your site need?</label>
+				<select name="pages">
+					<option value="">---</option>
+					<option value="0-5">0 - 5</option>
+					<option value="6-10">6 -10</option>
+					<option value="10+">More than 10</option>
+					<option value="Unsure">Unsure</option>
+				</select>
+
+				<label for="sales">Do you need online sales?</label>
+				<div class="radio">
+					<input type="radio" name="sales" value="Yes">Yes
+					<input type="radio" name="sales" value="No">No
+					<input type="radio" name="sales" value="Unsure">Unsure
+				</div>
+
+				<label for="customEmail">Do you need customs email addresses?</label>
+				<div class="radio">
+					<input type="radio" name="customEmail" value="Yes">Yes
+					<input type="radio" name="customEmail" value="No">No
+					<input type="radio" name="sales" value="Unsure">Unsure
+				</div>
+
+				<label for="comments">Comments</label>
+				<textarea rows="7" name="comments" placeholder="Additional comments"></textarea>
 				
 				<input type="submit">
 			</div>
