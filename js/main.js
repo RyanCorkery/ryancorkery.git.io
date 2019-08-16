@@ -17,7 +17,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction(){
 	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-		document.querySelector(".navUpper").style.height = "40px";
+		document.querySelector(".navUpper").style.height = "60px";
 	}
 	else{
 		document.querySelector(".navUpper").style.height = "80px";

@@ -74,7 +74,7 @@ nav img{
 	flex-direction: column;
 	position: fixed;
 	right: 0;
-	top: 0;
+	/*top: 0;*/
 	width: 200px;
 	height: 100vh;
 	background-color: rgb(102, 102, 102);
@@ -178,6 +178,14 @@ form div{
 	width: 100%;
 }
 
+.contactText h1{
+	text-align: center;
+}
+
+.contactText p{
+	text-align: left;
+}
+
 label{
 	margin: 10px 0 0 5%;
 
@@ -191,6 +199,10 @@ input, textarea{
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: none;
+}
+
+input[type=submit]{
+	width: 150px;
 }
 
 .thankyou_message{
