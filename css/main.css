@@ -13,41 +13,22 @@ body{
 
 /********************************/
 
-nav{
-	/*display: flex;*/
-	/*flex-direction: column;*/
-	/*position: relative;*/
-	/*position: -webkit-sticky;*/
-	/*position: sticky;*/
-	/*top: 0;*/
-	/*background-color: white;*/
-	/*width: 100%;*/
-}
-
 .navUpper{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/*position: relative;*/
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 80px;
 	box-shadow: 1px 1px 1px #888888; 
-	/*height: 80px;*/
 	transition: 0.4s;
-	/*position: -webkit-sticky;*/
-	/*position: sticky;*/
-	/*top: 0;*/
 	background-color: white;
-	/*width: 100%;*/
-	/*z-index: 1;*/
 }
 
 nav img{
 	margin: 5px 0 5px 10px;
 	height: 70px;
-	/*height: 80%;*/
 	transition: 0.4s;
 }
 
@@ -74,7 +55,6 @@ nav img{
 	flex-direction: column;
 	position: fixed;
 	right: 0;
-	/*top: 0;*/
 	width: 200px;
 	height: 100vh;
 	background-color: rgb(102, 102, 102);
@@ -86,6 +66,7 @@ nav img{
 	margin: 5px 10px;
 	height: 70px;
 	width: 36px;
+	transition: 0.4s;
 }
 
 .hamburgerClose:before, .hamburgerClose:after{
@@ -109,6 +90,10 @@ nav img{
 	-webkit-transform:rotate(-45deg);
     -moz-transform:rotate(-45deg);
 	transform: rotate(-45deg);
+}
+
+.hamburger:hover, .hamburgerClose:hover{
+	cursor: pointer;
 }
 
 nav ul{
@@ -166,6 +151,10 @@ h1, h2{
 	text-align: center;
 }
 
+h2{
+	font-weight: 400;
+}
+
 section p{
 	margin: 5px 0;
 	text-align: center;
@@ -173,14 +162,10 @@ section p{
 
 /********************************/
 
-form div{
+form > div{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-}
-
-.contactText h1{
-	text-align: center;
 }
 
 .contactText p{
@@ -200,11 +185,13 @@ input[type=text], input[type=email], textarea{
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: none;
+	font-size: 16px;
 }
 
 select{
 	margin: 10px 5%;
 	width: 200px;
+	font-size: 16px;
 }
 
 .radio{
@@ -220,6 +207,12 @@ input[type=submit]{
 	align-self: center;
 	margin: 10px;
 	width: 150px;
+	font-size: 16px;
+}
+
+.items{
+	display: none;
+	flex-direction: column;
 }
 
 .thankyou_message{
@@ -252,17 +245,9 @@ footer div p{
 }
 
 footer a{
-	/*font-style: italic;*/
 	text-decoration: none;
 	color: #3AAFD5;
 }
-
-
-
-
-
-
-
 
 
 

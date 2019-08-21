@@ -7,6 +7,8 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script data-cfasync="false" src="form-submission-handler.js"></script>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -14,15 +16,15 @@
 		<div class="navUpper">
 			<a href="index.html"><img src="img/logo-text.png"></a>
 
-			<a class="hamburger" href="#">
+			<div class="hamburger">
 				<div></div>
 				<div></div>
 				<div></div>
-			</a>
+			</div>
 		</div>
 
 		<div class="navRight">
-			<a class="hamburgerClose" href="#"></a>
+			<a class="hamburgerClose"></a>
 		
 			<ul class="links">
 				<li><a href="index.html">HOME</a></li>
@@ -71,11 +73,22 @@
 
 				<label for="sales">Do you need online sales?</label>
 				<div class="radio">
-					<input type="radio" name="sales" value="Yes">Yes
-					<input type="radio" name="sales" value="No">No
-					<input type="radio" name="sales" value="Unsure">Unsure
+					<input type="radio" name="sales" id="yes" value="Yes">Yes
+					<input type="radio" name="sales" id="no" value="No">No
+					<input type="radio" name="sales" id="unsure" value="Unsure">Unsure
 				</div>
 
+				<div class="items">
+					<label for="items">Approximately how many itmes do you sell?</label>
+					<select name="items">
+						<option value="">---</option>
+						<option value="0-5">0 - 10</option>
+						<option value="6-10">10 -50</option>
+						<option value="10+">More than 50</option>
+						<option value="Unsure">Unsure</option>
+					</select>
+				</div>
+				
 				<label for="customEmail">Do you need customs email addresses?</label>
 				<div class="radio">
 					<input type="radio" name="customEmail" value="Yes">Yes
