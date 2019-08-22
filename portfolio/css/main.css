@@ -1,0 +1,349 @@
+html, body{
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif;
+}
+/*****************************************************/
+/********************* Background ********************/
+/*****************************************************/
+.navSectionIndex{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	/*background: url("../img/latte.jpeg") no-repeat center;*/
+	background: url("../img/latte_3_mobile_2.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.navSectionAbout{
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	background: url("../img/coffee_machine.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.navSectionMenu{
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	background: url("../img/sandwich.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.navSectionCatering{
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	background: url("../img/catering.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.navSectionLocation{
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	background: url("../img/cafe.jpg") no-repeat center;
+	background-size: cover;
+}
+/*****************************************************/
+/********************** Nav Bar **********************/
+/*****************************************************/
+nav{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(100,100,100,0.7);
+	justify-content: space-between;
+}
+
+.navRowUpper{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.logo img{
+	display: flex;
+	justify-content: center;
+	max-width: 70px;
+	margin: 5px;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 5px 10px;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+nav a:hover{
+	color: rgba(36,240,240,1);
+}
+
+.social a{
+	text-indent: -100000px;
+	background: url("../img/insta.png") no-repeat center;
+	background-size: 80%;
+	max-width: 15px;
+	margin: auto;
+}
+
+.links, .social{
+	display: none;
+}
+
+/****************************************************
+/********************* Hamburger *********************/
+/*****************************************************/
+.hamburger{
+	display: flex;
+	align-self: center;
+	/*border: 1px solid rgba(0,0,0,0.7);*/
+	/*border-radius: 5px;*/
+	margin-right: 15px;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 3px auto;
+}
+
+.hamburgerClose{
+	align-self: center;
+	/*border: 1px solid black;*/
+	/*border-radius: 5px;*/
+	margin-right: 15px;
+	padding: 0 7px;
+	display: none;
+}
+
+/********************************************************/
+/********************* Main Content *********************/
+/********************************************************/
+.intro, .about, .menu, .catering, .location{
+	margin: 0 30px;
+	text-align: center;
+	font-size: 15px;
+}
+
+h2 {
+	font-size: 20px;
+	width: 100%; 
+	text-align: center; 
+	border-bottom: 1px solid #000; 
+	line-height: 0.1em;
+	margin: 25px 0; 
+} 
+
+h2 span { 
+	background:#fff; 
+    padding:0 15px; 
+}
+/********************************************************/
+/************************ Footer ************************/
+/********************************************************/
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+}
+
+footer img{
+	max-width: 120px;
+	margin: 20px;
+}
+
+footer div{
+	margin: 0 20px;
+}
+
+.footerTitle{
+	font-size: 18px;
+}
+
+.footerText{
+	font-size: 15px;
+	color: rgba(255,255,255,0.8);
+}
+
+.instaFooter{
+	max-width: 30px;
+	margin: 0 0 5px 0;
+}
+/******************************************************/
+/******************** Menu Section ********************/
+/******************************************************/
+.menu div{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+
+.menu img{
+	width: 300px;
+	margin: 10px;
+}
+/******************************************************/
+/****************** Catering Section ******************/
+/******************************************************/
+.orderForm{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 15px;
+}
+	
+.orderForm > *{
+	margin: 0 auto;
+}
+
+.orderForm > input{
+	width: 100%;
+	max-width: 380px;
+}
+
+input.qty{
+	width: 27px;
+}
+
+select{
+	font-size: 16px;
+}
+
+select:focus{
+	font-size: 16px;
+}
+
+.orderForm input[type=text]{
+	color: grey;
+	font-size: 16px;
+	padding-left: 5px;
+}
+
+.orderForm input[type=date]{
+	font-size: 16px;
+}
+
+.orderForm input[type=button]{
+	width: 200px;
+	font-size: 16px;
+}
+
+.dateSection{
+	display: flex;
+}
+
+.dateSection label{
+	font-size: 16px;
+	align-self: center;
+}
+
+.dateSection img{
+	padding: 0 5px;
+	max-height: 25px;
+	align-self: center;
+}
+/******************************************************/
+/****************** Location Section ******************/
+/******************************************************/
+.map{
+	margin: 15px auto;
+	width: 100%;
+	height: 500px;
+	border: 0;
+}
+/******************************************************/
+/****************** Larger Screens ********************/
+/******************************************************/
+@media screen and (min-width: 768px){
+	nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+	}
+
+	.navRowUpper{
+		border-bottom: none;
+	}
+
+	.logo{
+		margin-left: 30px;
+	}
+
+	.links, .social{
+		display: flex;
+	}
+
+	.hamburger{
+		display: none;
+	}
+
+	nav ul{
+		display: flex;
+		align-self: flex-end;
+	}
+
+	.social a{
+		justify-content: flex-end;
+	}
+
+	nav ul a, ul.social{
+		background-color: transparent;
+		border-bottom: none;
+	}
+
+	.social{
+		justify-content: flex-end;
+	}
+
+	.social a{
+		background-size: 60%;
+		padding-right: 40px;
+	}
+
+	footer{
+		flex-direction: row;
+	}
+
+	footer div{
+		width: 40%;
+		margin: 0 20px;
+	}
+
+	.navSectionIndex{
+		background: url("../img/latte_3.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	/*********************** Catering ***********************/
+	input.qty{
+		width: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
