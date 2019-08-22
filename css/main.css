@@ -122,7 +122,8 @@ section{
 	flex: 1;
 	margin-top: 80px;
 	padding: 0px 20px;
-	background-color: rgba(236, 242, 248, 1);
+	/*background-color: rgba(236, 242, 248, 1);*/
+	background-color: rgba(58, 174, 213, 0.1);
 	box-shadow: 1px 1px 1px #888888; 
 }
 
@@ -166,12 +167,13 @@ form > div{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	padding: 0 5%;
 }
 
 .contactText{
 	display: flex;
 	flex-direction: column;
-	margin: 0 5%;
+	/*margin: 0 5%;*/
 }
 
 .contactText p{
@@ -180,14 +182,16 @@ form > div{
 }
 
 label{
-	margin: 10px 0 0 5%;
+	/*margin: 10px 0 0 5%;*/
+	margin: 10px 0 0 0;
 }
 
 input[type=text], input[type=email], textarea{
 	align-self: center;
 	margin: 12px 0;
 	padding: 12px;
-	width: 90%;
+	/*width: 90%;*/
+	width: 100%;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: none;
@@ -195,14 +199,16 @@ input[type=text], input[type=email], textarea{
 }
 
 select{
-	margin: 10px 5%;
+	/*margin: 10px 5%;*/
+	margin: 10px 0;
 	width: 200px;
 	font-size: 16px;
 }
 
 .radio{
 	flex-direction: row;
-	margin: 10px 5%;
+	/*margin: 10px 5%;*/
+	margin: 10px 0;
 }
 
 input[type=radio]{
@@ -232,7 +238,7 @@ input[type=submit]{
 	display: block;
 	margin: 15px auto;
 	width: 90%;
-	max-width: 300px;
+	max-width: 350px;
 	height: auto;
 }
 
