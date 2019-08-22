@@ -223,9 +223,16 @@ input[type=submit]{
 
 /********************************/
 
-.splash{
-	height: 250px;
-	width: auto;
+.splash img{
+	display: block;
+	margin: 15px auto;
+	width: 90%;
+	height: auto;
+}
+
+.splash p{
+	margin: 5px 5%;
+	text-align: justify;
 }
 
 /********************************/
