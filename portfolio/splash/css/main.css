@@ -10,7 +10,6 @@ html, body{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	/*background: url("../img/latte.jpeg") no-repeat center;*/
 	background: url("../img/latte_3_mobile_2.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -106,8 +105,6 @@ nav a:hover{
 .hamburger{
 	display: flex;
 	align-self: center;
-	/*border: 1px solid rgba(0,0,0,0.7);*/
-	/*border-radius: 5px;*/
 	margin-right: 15px;
 }
 
@@ -120,8 +117,6 @@ nav a:hover{
 
 .hamburgerClose{
 	align-self: center;
-	/*border: 1px solid black;*/
-	/*border-radius: 5px;*/
 	margin-right: 15px;
 	padding: 0 7px;
 	display: none;
@@ -131,9 +126,17 @@ nav a:hover{
 /********************* Main Content *********************/
 /********************************************************/
 .intro, .about, .menu, .catering, .location{
-	margin: 0 30px;
-	text-align: center;
+	margin: 30px 30px;
+	text-align: justify;
 	font-size: 15px;
+}
+
+.intro p, .about p, .menu p, .catering p, .location p{
+	padding: 0 5%;
+}
+
+.center{
+	text-align: center;
 }
 
 h2 {
@@ -199,6 +202,11 @@ footer div{
 /******************************************************/
 /****************** Catering Section ******************/
 /******************************************************/
+
+.note{
+	color: red;
+}
+
 .orderForm{
 	display: flex;
 	flex-direction: column;
@@ -229,11 +237,16 @@ select:focus{
 .orderForm input[type=text]{
 	color: grey;
 	font-size: 16px;
-	padding-left: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 .orderForm input[type=date]{
 	font-size: 16px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 .orderForm input[type=button]{

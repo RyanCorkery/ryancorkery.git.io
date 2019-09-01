@@ -14,19 +14,27 @@
 <body>
 	<nav>
 		<div class="navUpper">
-			<a href="index.html"><img src="img/logo-text.png"></a>
+			<div class="navImg">
+				<a href="index.html"><img src="img/logo-text.png"></a>
+			</div>
 
 			<div class="hamburger">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
+
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+			</ul>
 		</div>
 
 		<div class="navRight">
 			<div class="hamburgerClose"></div>
 		
-			<ul class="links">
+			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -37,7 +45,7 @@
 	<section>
 		<div>
 			<div class="contactText">
-				<h1>CONTACT ME</h1>
+				<h2>CONTACT ME</h2>
 
 				<p>I would love to hear from you!</p>
 				<p>Please use the contact form below to send a message.</p>
@@ -93,7 +101,7 @@
 				<div class="radio">
 					<input type="radio" name="customEmail" value="Yes">Yes
 					<input type="radio" name="customEmail" value="No">No
-					<input type="radio" name="sales" value="Unsure">Unsure
+					<input type="radio" name="customEmail" value="Unsure">Unsure
 				</div>
 
 				<label for="comments">Comments</label>
@@ -103,18 +111,28 @@
 			</div>
 
 			<div class="thankyou_message" >
-  				<h2>Thanks for contacting me! I will get back to you soon!</h2>
+  				<h3>Thanks for contacting me! I will get back to you soon!</h3>
 			</div>
 		</form>
 	</section>
 
 	<footer>
-		<img src="img/logo.png">
+		<div class="footerSide">
+			<img src="img/logo.png">
+		</div>
 
-		<div>
+		<div class="footerMid">
 			<p><a class="contact" href="contact.html">Contact</a> To Create Your Perfect Website</p>
 
 			<p>ryan.corkery@ryancorkery.com</p>
+		</div>
+
+		<div class="footerSide">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+			</ul>
 		</div>
 	</footer>
 </body>

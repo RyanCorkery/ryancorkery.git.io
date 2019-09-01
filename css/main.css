@@ -8,6 +8,7 @@ body{
 	flex-direction: column;
 	font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 	font-size: 16px;
+	line-height: 1.5;
 	margin: 0;
 }
 
@@ -27,7 +28,7 @@ body{
 }
 
 nav img{
-	margin: 5px 0 5px 10px;
+	margin-left: 10px;
 	height: 70px;
 	transition: 0.4s;
 }
@@ -48,6 +49,10 @@ nav img{
     margin: 2px auto;
     border-radius: 2px;
     background-color: black;
+}
+
+.navUpper ul{
+	display: none;
 }
 
 .navRight{
@@ -96,7 +101,7 @@ nav img{
 	cursor: pointer;
 }
 
-nav ul{
+.navRight ul{
 	align-self: flex-start;
 	list-style-type: none;
 	margin: 0 5%;
@@ -105,14 +110,14 @@ nav ul{
 	border-top: 1px solid rgb(140, 140, 140);
 }
 
-nav ul a{
-	display: block;;
+.navRight ul a{
+	display: block;
 	padding: 10px;
 	text-decoration: none;
 	color: white;
 }
 
-nav ul a:hover{
+.navRight ul a:hover{
 	background-color: #888888;
 }
 
@@ -122,7 +127,6 @@ section{
 	flex: 1;
 	margin-top: 80px;
 	padding: 0px 20px;
-	/*background-color: rgba(236, 242, 248, 1);*/
 	background-color: rgba(58, 174, 213, 0.1);
 	box-shadow: 1px 1px 1px #888888; 
 }
@@ -146,14 +150,20 @@ section img{
 
 h1, h2{
 	margin: 0;
-	padding: 0;
 	font-size: 20px;
 	font-weight: 500;
 	text-align: center;
 }
 
 h2{
+	padding: 10px 0;
+}
+
+h3{
+	margin: 10px 0 0 0;
+	font-size: 20px;
 	font-weight: 400;
+	text-align: center;
 }
 
 section p{
@@ -182,7 +192,6 @@ form > div{
 }
 
 label{
-	/*margin: 10px 0 0 5%;*/
 	margin: 10px 0 0 0;
 }
 
@@ -190,7 +199,6 @@ input[type=text], input[type=email], textarea{
 	align-self: center;
 	margin: 12px 0;
 	padding: 12px;
-	/*width: 90%;*/
 	width: 100%;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -199,7 +207,6 @@ input[type=text], input[type=email], textarea{
 }
 
 select{
-	/*margin: 10px 5%;*/
 	margin: 10px 0;
 	width: 200px;
 	font-size: 16px;
@@ -207,7 +214,6 @@ select{
 
 .radio{
 	flex-direction: row;
-	/*margin: 10px 5%;*/
 	margin: 10px 0;
 }
 
@@ -251,17 +257,16 @@ input[type=submit]{
 
 footer{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin:25px 15px;
+	padding: 15px;
 }
 
 footer img{
-	margin-right: auto;
 	height: 50px;
 }
 
-footer div{
+.footerMid{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -277,6 +282,116 @@ footer a{
 	text-decoration: none;
 	color: #3AAFD5;
 }
+
+footer ul{
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+footer ul a{
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 14px;
+	color: black;
+}
+
+footer ul a:hover{
+	color: #3AAFD5;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 480px){
+	section, footer{
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	section{
+		margin-top: 0;
+	}
+
+/********************************/
+	nav img{
+		margin-left: 60px;
+	}
+
+	.hamburger{
+		display: none;
+	}
+
+	.navUpper{
+		position: relative;
+	}
+
+	.navUpper ul{
+		display: flex;
+		margin: 20px 10% 0 0;
+		list-style: none;
+	}
+
+	.navUpper ul a{
+		display: block;
+		padding: 0 30px;
+		text-decoration: none;
+		color: black;
+	}
+
+	.navUpper ul a:hover{
+		color: #3AAFD5;
+	}
+
+/********************************/
+
+	.splash img{
+		max-width: 600px;
+	}
+
+	.splash p{
+		margin-bottom: 20px;
+		max-width: 750px;
+	}
+
+/********************************/
+
+	footer ul{
+		display: block;
+	}
+
+	.footerSide{
+		margin: 0 60px;
+		width: 90px;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+	section, footer{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+
+	.navImg{
+		padding-left: 5%;
+	}
+}
+
+
+
+
+
 
 
 
