@@ -2,6 +2,7 @@ html, body{
 	height: 100%;
 	margin: 0;
 	font-family: sans-serif;
+	line-height: 1.5;
 }
 /*****************************************************/
 /********************* Background ********************/
@@ -9,7 +10,8 @@ html, body{
 .navSectionIndex{
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
+	width: 100%;
 	background: url("../img/latte_3_mobile_2.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -17,7 +19,8 @@ html, body{
 .navSectionAbout{
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 50vh;
+	width: 100%;
 	background: url("../img/coffee_machine.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -25,7 +28,8 @@ html, body{
 .navSectionMenu{
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 50vh;
+	width: 100%;
 	background: url("../img/sandwich.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -33,7 +37,8 @@ html, body{
 .navSectionCatering{
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 50vh;
+	width: 100%;
 	background: url("../img/catering.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -41,7 +46,8 @@ html, body{
 .navSectionLocation{
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 50vh;
+	width: 100%;
 	background: url("../img/cafe.jpg") no-repeat center;
 	background-size: cover;
 }

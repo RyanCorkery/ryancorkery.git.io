@@ -379,12 +379,12 @@ footer ul a:hover{
 
 @media screen and (min-width: 768px){
 	section, footer{
-		padding-right: 10%;
-		padding-left: 10%;
+		padding-right: 8%;
+		padding-left: 8%;
 	}
 
 	.navImg{
-		padding-left: 5%;
+		padding-left: 4%;
 	}
 }
 
