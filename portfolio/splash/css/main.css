@@ -8,8 +8,8 @@ html, body{
 /********************* Background ********************/
 /*****************************************************/
 .navSectionIndex{
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 	height: 100vh;
 	width: 100%;
 	background: url("../img/latte_3_mobile_2.jpg") no-repeat center;
@@ -47,7 +47,7 @@ html, body{
 	display: flex;
 	flex-direction: column;
 	height: 50vh;
-	width: 100%;
+	width: 100%; 
 	background: url("../img/cafe.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -195,15 +195,54 @@ footer div{
 /******************************************************/
 /******************** Menu Section ********************/
 /******************************************************/
-.menu div{
+/*.menu div{
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
+}*/
+
+.menu > div{
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 15px;
 }
 
 .menu img{
 	width: 300px;
 	margin: 10px;
+}
+
+.category{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 3px solid black;
+	border-bottom: 2px solid black;
+}
+
+.price{
+	display: flex;
+}
+
+.price div{
+	display: flex;
+	flex-direction: column;
+	margin: 0 7px;
+	line-height: 1;
+}
+
+.price p{
+	margin: 0;
+}
+
+.priceInline{
+	display: flex;
+	justify-content: space-between;
+}
+
+.priceInline p{
+	margin: 7px 0;
 }
 /******************************************************/
 /****************** Catering Section ******************/
@@ -221,6 +260,13 @@ footer div{
 	
 .orderForm > *{
 	margin: 0 auto;
+}
+
+.orderForm label{
+	padding: 3px;
+	width: 100%;
+	max-width: 380px;
+	text-align: left;
 }
 
 .orderForm > input{
@@ -243,7 +289,7 @@ select:focus{
 .orderForm input[type=text]{
 	color: grey;
 	font-size: 16px;
-	padding: 5px;
+	padding: 7px 5px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
