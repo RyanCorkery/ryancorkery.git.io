@@ -8,17 +8,13 @@ html, body{
 /********************* Background ********************/
 /*****************************************************/
 .navSectionIndex{
-	/*display: flex;*/
-	/*flex-direction: column;*/
 	height: 100vh;
 	width: 100%;
-	background: url("../img/latte_3_mobile_2.jpg");
+	background: url("../img/latte_3_mobile_2.jpg") no-repeat center;
 	background-size: cover;
 }
 
 .navSectionAbout{
-	display: flex;
-	flex-direction: column;
 	height: 50vh;
 	width: 100%;
 	background: url("../img/coffee_machine.jpg") no-repeat center;
@@ -26,8 +22,6 @@ html, body{
 }
 
 .navSectionMenu{
-	display: flex;
-	flex-direction: column;
 	height: 50vh;
 	width: 100%;
 	background: url("../img/sandwich.jpg") no-repeat center;
@@ -35,8 +29,6 @@ html, body{
 }
 
 .navSectionCatering{
-	display: flex;
-	flex-direction: column;
 	height: 50vh;
 	width: 100%;
 	background: url("../img/catering.jpg") no-repeat center;
@@ -44,8 +36,6 @@ html, body{
 }
 
 .navSectionLocation{
-	display: flex;
-	flex-direction: column;
 	height: 50vh;
 	width: 100%; 
 	background: url("../img/cafe.jpg") no-repeat center;
@@ -201,16 +191,14 @@ footer div{
 	justify-content: space-around;
 }*/
 
+.menu{
+	text-align: left;
+}
+
 .menu > div{
 	width: 100%;
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 15px;
-}
-
-.menu img{
-	width: 300px;
-	margin: 10px;
 }
 
 .category{
