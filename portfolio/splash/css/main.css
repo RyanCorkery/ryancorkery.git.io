@@ -182,6 +182,17 @@ footer div{
 	max-width: 30px;
 	margin: 0 0 5px 0;
 }
+
+.copyright{
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.copyright a{
+	text-decoration: none;
+	color: white;
+}
 /******************************************************/
 /******************** Menu Section ********************/
 /******************************************************/
@@ -375,6 +386,10 @@ select:focus{
 	footer div{
 		width: 40%;
 		margin: 0 20px;
+	}
+
+	.copyright{
+		text-align: center;
 	}
 
 	.navSectionIndex{
